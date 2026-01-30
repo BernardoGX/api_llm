@@ -42,14 +42,8 @@ python api.py
 
 - Se `api.py` expõe uma rota de geração, um exemplo de requisição (ajuste o endpoint conforme `api.py`):
 
-```bash
-curl -X POST http://localhost:8000/generate \
-	-H "Content-Type: application/json" \
-	-d '{"prompt":"Escreva uma saudação curta"}'
-```
 
 Endpoints (exemplos genéricos)
-- `POST /generate` — recebe JSON com `prompt` e retorna o texto gerado.
 - `GET /health` — opcional, checagem de saúde do serviço.
 
 Observações de desenvolvimento
@@ -57,18 +51,5 @@ Observações de desenvolvimento
 - Os templates de prompt ficam em `prompts.py`; altere-os para ajustar o comportamento do modelo.
 - `config.py` consolida variáveis de ambiente e ajustes de timeout/retry.
 
-Testes e validação
-- Adicione testes unitários para `llm.py` e rotas em `api.py` conforme o projeto evolui.
 
-Contribuição
-- Abra pull requests com pequenos commits e descrições claras.
 
-Licença
-- Escolha e adicione uma licença ao repositório (ex.: MIT) se desejar publicar.
-
----
-
-Se quiser, eu posso:
-- adaptar o README com instruções específicas do framework usado em `api.py` (Flask/FastAPI/etc.);
-- adicionar exemplos de `.env` e um script de desenvolvimento (por exemplo, `run.sh` ou `run.ps1`);
-- revisar `config.py` e sugerir variáveis de ambiente concretas.
