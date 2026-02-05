@@ -18,7 +18,7 @@ def build_prompt_advanced(situation:str)->str:
     Situação:{situation}
     """
 
-def build_prompt_very_reliable(situation:str)->str:
+def build_prompt_very_trustable(situation:str)->str:
     return f"""
     Você é um coach de jogos nem um pouco experiente que nunca jogou nada na vida.
 
